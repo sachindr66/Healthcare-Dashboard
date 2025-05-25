@@ -1,6 +1,6 @@
 import React from "react";
 import  '../styles/Header.css'
-import { Search, Bell, Plus } from "lucide-react";
+import { Search, Bell, Plus,UserCircle } from "lucide-react";
 
 export default function Header() {
   return (
@@ -13,14 +13,13 @@ export default function Header() {
       <div className="icons">
         <Bell size={20} />
         <button className="addButton">
-          <Plus size={18} />
+          <Plus size={20} />
         </button>
         <div className="userProfile">
-          <img
-            src="/assets/avatar.png"
-            alt="User Avatar"
-            className="avatar"
-          />
+        
+          <div className="userProfile">
+       <UserCircle size={30} />
+          </div>
           <span>Dr. John Doe</span>
         </div>
       </div>

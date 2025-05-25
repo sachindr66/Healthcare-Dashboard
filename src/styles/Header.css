@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f9fafb;
   padding: 0 20px;
   height: 60px;
   border-bottom: 1px solid #ddd;
@@ -12,7 +11,6 @@
 .logo {
   font-weight: 700;
   font-size: 20px;
-  color: #374151;
 }
 
 .searchBar {
@@ -31,7 +29,6 @@
   margin-left: 8px;
   width: 100%;
   font-size: 14px;
-  color: #6b7280;
   background: transparent;
 }
 
@@ -39,14 +36,16 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #6b7280;
 }
 
+
 .addButton {
+  display: flex;
+  align-items: center;
   border: none;
-  background-color: #3bc14a;
+  background-color: #3734a7;
   color: white;
-  padding: 6px 10px;
+  padding: 4.8px;
   border-radius: 4px;
   cursor: default;
 }
@@ -55,13 +54,32 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #374151;
   font-weight: 500;
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+
+   .userProfile span{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .searchBar{
+    display: none;
+  }
+  .addButton{
+    padding: 4px;
+  }
+  .userProfile span{
+    display: none;
+  }
 }

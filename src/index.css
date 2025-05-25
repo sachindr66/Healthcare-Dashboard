@@ -18,7 +18,8 @@
   --color-primary: #3bc14a;
   --color-danger: #ea5455;
   --color-text: #374151;
-  /* --shadow-color: 0 4px 12px rgba(0, 0, 0, 0.08); */
+  --color-text: #222660;
+  --shadow-color: 0 4px 12px rgba(0, 0, 0, 0.08);
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -28,6 +29,8 @@ body {
   margin: 0;
   line-height: 1.5;
   scrollbar-color: #A3BFFA #E0E7FF;
+  background: #000;
+  color: var(--color-text);
 }
 
 p {
@@ -36,17 +39,4 @@ p {
 }
 
 
-.addButton {
-  background-color: var(--color-primary);
-  color: white;
-  border-radius: var(--radius);
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(59,193,74,0.5);
-  transition: background-color 0.3s ease;
-}
 
-.addButton:hover {
-  background-color: #31a93e;
-}

@@ -2,16 +2,17 @@
   display: flex;
   align-items: center;
   background-color: #dde2f9; 
+  background-color: #dde2f9; 
   padding: 16px 20px;
   border-radius: 12px;
   gap: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 4px 10px #0000000d; 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px #00000014;
 }
 
 .icon {

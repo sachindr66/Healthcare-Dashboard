@@ -1,14 +1,9 @@
-// // src/data/calendarAppointments.js
-// export const calendarAppointments = [
-//   { date: '2021-10-05', times: ['09:00', '11:00'] },
-//   { date: '2021-10-12', times: ['13:00', '15:00'] },
-// ];
-
 
 export const calendarMonth = "October 2021";
 
 export const calendarAppointments = [
-  { day: 5, times: ["09:00", "11:00", "13:00", "15:00"] },
+  { day: 6, times: ["09:00", "11:00", "13:00", "15:00"] },
+  { day: 3, times: ["10:00", "12:00", "14:00", "15:00"] },
 ];
 
 export const detailedAppointments = [

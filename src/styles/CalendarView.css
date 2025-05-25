@@ -3,7 +3,6 @@
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  font-family: 'Inter', sans-serif;
 }
 .weekdays, .daysGrid {
   display: grid;
@@ -24,13 +23,11 @@
 }
 .dayNumber {
   font-weight: bold;
-  color: #374151;
 }
 .appointmentTime {
   display: flex;
   flex-direction: column;
   font-size: 10px;
-  color: #3B82F6;
 }
 .detailedAppointments {
   display: flex;
@@ -51,4 +48,18 @@
 }
 .time {
   font-size: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .daysGrid{
+    gap: 4px;
+  }
+
+  .day{
+    padding: 2px;
+  }
+  .detailedAppointments{
+    flex-direction: column;
+  }
 }
