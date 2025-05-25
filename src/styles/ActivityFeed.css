@@ -1,0 +1,19 @@
+.activity {
+  background: var(--bg-color);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-family: 'Inter', sans-serif;
+}
+.chart {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  height: 100px;
+  align-items: flex-end;
+}
+.bar {
+  width: 20px;
+  background-color: #3BC14A;
+  border-radius: 4px 4px 0 0;
+}

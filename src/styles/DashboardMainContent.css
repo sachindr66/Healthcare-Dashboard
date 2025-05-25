@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  /* background: var(--bg-color); */
+  /* background: white; */
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftchild{
+  display: flex;
+  gap: 20px;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+

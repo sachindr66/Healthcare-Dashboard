@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #dde2f9; 
+  padding: 16px 20px;
+  border-radius: 12px;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.content .time {
+  font-size: 12px;
+  color: #6b7280;
+}
