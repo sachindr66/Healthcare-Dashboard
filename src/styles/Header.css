@@ -4,23 +4,25 @@
   justify-content: space-between;
   padding: 0 20px;
   height: 60px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
   font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
 }
 
 .logo {
   font-weight: 700;
   font-size: 20px;
+  color: var(--color-text);
 }
 
 .searchBar {
   display: flex;
   align-items: center;
-  background: white;
-  border-radius: 6px;
+  background: var(--color-surface);
+  border-radius: var(--radius-sm, 6px);
   padding: 6px 10px;
   width: 300px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .searchBar input {
@@ -28,8 +30,9 @@
   outline: none;
   margin-left: 8px;
   width: 100%;
-  font-size: 14px;
+  font-size: var(--font-size-sm, 14px);
   background: transparent;
+  color: var(--color-text, #1e293b);
 }
 
 .icons {
@@ -38,17 +41,25 @@
   gap: 16px;
 }
 
-
 .addButton {
   display: flex;
   align-items: center;
   border: none;
-  background-color: #3734a7;
+  background-color: var(--color-primary); 
   color: white;
-  padding: 4.8px;
-  border-radius: 4px;
-  cursor: default;
+  padding: 10px;
+  border-radius: var(--radius-sm); 
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  transition: background-color 0.3s ease;
 }
+
+.addButton:hover {
+  background-color:  #4756df;
+}
+
+
 
 .userProfile {
   display: flex;
@@ -58,28 +69,30 @@
 }
 
 .avatar {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 @media only screen and (max-width: 700px) {
-
-   .userProfile span{
+  .userProfile span {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
-  .searchBar{
+  .searchBar {
     display: none;
   }
-  .addButton{
-    padding: 4px;
+  .logo {
+    visibility: hidden;
   }
-  .userProfile span{
+  .addButton {
+    padding: var(--spacing-xs) var(--spacing-sm); 
+  }
+
+  .userProfile span {
     display: none;
   }
 }

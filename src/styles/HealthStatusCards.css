@@ -1,32 +1,36 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--spacing-md); /* 16px */
 }
-.card {
-  background: white;
-  padding: 12px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
+
 .statusIndicator {
   min-width: 10px;
   height: 10px;
   border-radius: 50%;
+  background-color: var(--color-primary);
 }
+
 .title {
   font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 4px;
+  font-size: var(--font-size-sm); 
+  margin-bottom: var(--spacing-xs); 
+  color: var(--color-text);
 }
+
 .status {
-  font-size: 12px;
-  color: #6b7280;
+  font-size: 12px; 
+  color: var(--color-muted);
 }
+
 .date {
-  font-size: 10px;
-  color: #9ca3af;
+  font-size: 12px; 
+  color:var(--color-muted);
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    gap: var(--spacing-sm); 
+  }
+
 }

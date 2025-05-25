@@ -1,9 +1,3 @@
-// src/data/upcomingAppointments.js
-// export const upcomingAppointments = [
-//   { day: 'Thursday', appointments: [{ title: 'Dentist', time: '10:00 AM' }] },
-//   { day: 'Saturday', appointments: [{ title: 'Physiotherapy', time: '02:00 PM' }] },
-// ];
-
 export const upcomingAppointments = [
   {
     id: 1,

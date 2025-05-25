@@ -1,19 +1,32 @@
 .activity {
-  background: var(--bg-color);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  font-family: 'Inter', sans-serif;
+  background: var(--color-surface);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-family);
+  color: var(--color-text);
 }
+
 .chart {
   display: flex;
-  gap: 8px;
-  margin-top: 10px;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
   height: 100px;
   align-items: flex-end;
 }
+
+
 .bar {
   width: 20px;
-  background-color: #3BC14A;
-  border-radius: 4px 4px 0 0;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  animation: growHeight 0.7s ease forwards;
+    height: 0;
 }
+
+@keyframes growHeight {
+  to {
+    height: var(--final-height);
+  }
+}
+

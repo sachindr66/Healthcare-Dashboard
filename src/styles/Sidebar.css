@@ -1,70 +1,105 @@
 .sidebar {
   width: 220px;
-  padding: 20px;
+  padding: var(--spacing-lg); 
   font-family: 'Inter', sans-serif;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-bg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .heading {
   font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 16px;
-  color: #6b7280;
+  font-size: var(--font-size-sm); 
+  margin-bottom: var(--spacing-lg); 
+  color: var(--color-secondary); 
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: var(--spacing-md); 
 }
 
 .navLink {
   display: flex;
   align-items: center;
-  gap: 12px;
-  color: #374151;
+  gap: var(--spacing-md);
+  color: var(--color-text);
   font-weight: 500;
   text-decoration: none;
-  cursor: default;
-  padding: 6px 10px;
-  border-radius: 6px;
+  cursor: pointer;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sidebar-overlay {
+  position: fixed;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 90; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .navLink:hover {
   background-color: #e2e8f0;
+  color: var(--color-primary);
 }
 
+.navLink.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+
 .icon {
-  color: #6b7280;
+  color: var(--color-secondary);
   flex-shrink: 0;
 }
 
+.menuToggle {
+  display: none;
+  position: absolute;
+  top: var(--spacing-lg); 
+  left: var(--spacing-lg); 
+  background: none;
+  border: none;
+  z-index: 200;
+  cursor: pointer;
+}
 
 @media (max-width: 640px) {
+  .menuToggle {
+    display: block;
+    left: 14px;
+  }
+
   .sidebar {
-    width: 64px; 
-    padding: 20px 10px;
-  }
-
-  .navLink span {
-    display: none; 
-  }
-
-  .navLink {
-    justify-content: center;
-    position: relative;
-  }
-
-  .navLink:hover::after {
-    content: attr(data-label);
-    position: absolute;
-    left: 50px;
-    white-space: nowrap;
-    background-color: #e2e8f0;
-    padding: 10px 8px;
-    border-radius: 4px;
-    font-size: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: var(--color-bg);
+    transform: translateX(-100%);
     z-index: 100;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  }
+  .heading{
+  margin-top: 30px;
+
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-100%);
   }
 }

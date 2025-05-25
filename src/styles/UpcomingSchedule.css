@@ -1,23 +1,36 @@
+:root {
+  --bg-color: #fff; /* You can override this as needed */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --radius-md: 12px;
+  --spacing-base: 16px;
+  --gap-base: 10px;
+  --font-family: 'Inter', sans-serif;
+}
+
 .upcoming {
   background: var(--bg-color);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  font-family: 'Inter', sans-serif;
+  padding: var(--spacing-base);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 4px var(--shadow-color);
+  font-family: var(--font-family);
 }
+
 .daySection {
   margin-top: 10px;
 }
-.appointment{
+
+.appointment {
   display: flex;
-  gap: 10px;
+  gap: var(--gap-base);
   margin-top: 6px;
 }
 
-
 @media only screen and (max-width: 600px) {
-  .appointment{
-    flex-direction: column;
+  .upcoming {
+    padding: 12px; 
   }
-
+  .appointment {
+    flex-direction: column;
+    gap: 8px; 
+  }
 }

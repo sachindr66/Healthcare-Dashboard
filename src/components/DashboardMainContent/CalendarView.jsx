@@ -45,7 +45,7 @@ export default function CalendarView() {
             className="appointmentCard"
             style={{ background: background, color: color }}
           >
-            <div className="title">{title}</div>
+            <div className="titles">{title}</div>
             <div className="time">{time}</div>
             <div className="time">{name}</div>
           </div>

@@ -12,14 +12,14 @@ export const detailedAppointments = [
     title: "Dentist",
     time: "11:00",
     color: "white",
-    background:"#3734a7",
+    background: "var(--color-primary)",
     name:"Dr.Cameron"
   },
   {
     id: 2,
     title: "Physiotherapy Appointment",
     time: "15:00",
-    background:"#dde2f9",
+    background: "var(--card-bg-start)",
     name:"Dr.Willamson"
   },
 ];
