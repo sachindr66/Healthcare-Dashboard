@@ -3,7 +3,7 @@ import "../../styles/HealthStatusCards.css";
 import { healthIndicators } from "../../data/healthStatus";
 
 export default function HealthStatusCards() {
-  const cards = healthIndicators.filter((h) => h.label !== "Healthy Heart");
+  const cards = healthIndicators.filter((h) => h.label !== "Healthy Leg");
 
   return (
     <div className="cards">

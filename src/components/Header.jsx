@@ -1,5 +1,6 @@
 import React from "react";
 import  '../styles/Header.css'
+import profile from '../assets/profile.png'
 import { Search, Bell, Plus,UserCircle } from "lucide-react";
 
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
         <div className="userProfile">
         
           <div className="userProfile">
-       <UserCircle size={30} />
+          <img src={profile} width={30} alt="" />
           </div>
           <span>Dr. John Doe</span>
         </div>

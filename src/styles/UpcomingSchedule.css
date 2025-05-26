@@ -1,36 +1,17 @@
-:root {
-  --bg-color: #fff; /* You can override this as needed */
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --radius-md: 12px;
-  --spacing-base: 16px;
-  --gap-base: 10px;
-  --font-family: 'Inter', sans-serif;
+.upcoming,.daySection{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
-
-.upcoming {
-  background: var(--bg-color);
-  padding: var(--spacing-base);
-  border-radius: var(--radius-md);
-  box-shadow: 0 1px 4px var(--shadow-color);
-  font-family: var(--font-family);
-}
-
-.daySection {
-  margin-top: 10px;
-}
-
 .appointment {
   display: flex;
-  gap: var(--gap-base);
-  margin-top: 6px;
+  gap: var(--spacing-md);
 }
 
-@media only screen and (max-width: 600px) {
-  .upcoming {
-    padding: 12px; 
-  }
+@media only screen and (max-width: 486px) {
+ 
   .appointment {
     flex-direction: column;
-    gap: 8px; 
+    gap: var(--spacing-xs); 
   }
 }

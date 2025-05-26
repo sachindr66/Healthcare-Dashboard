@@ -26,9 +26,11 @@
   border: 1px solid var(--color-border);
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   color: var(--color-text);
   transform: translate(-50%, -50%);
+  white-space: nowrap;
+  
 }
 
 .dot {

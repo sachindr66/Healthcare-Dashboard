@@ -6,20 +6,19 @@
   height: 60px;
   border-bottom: 1px solid var(--color-border);
   font-family: 'Inter', sans-serif;
-  background-color: var(--color-bg);
+  background-color: var(--color-surface);
 }
 
 .logo {
   font-weight: 700;
   font-size: 20px;
-  color: var(--color-text);
 }
 
 .searchBar {
   display: flex;
   align-items: center;
-  background: var(--color-surface);
-  border-radius: var(--radius-sm, 6px);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
   padding: 6px 10px;
   width: 300px;
   box-shadow: var(--shadow-sm);
@@ -30,15 +29,15 @@
   outline: none;
   margin-left: 8px;
   width: 100%;
-  font-size: var(--font-size-sm, 14px);
+  font-size: var(--font-size-sm);
   background: transparent;
-  color: var(--color-text, #1e293b);
+  color: var(--color-text);
 }
 
 .icons {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-md);
 }
 
 .addButton {
@@ -46,12 +45,10 @@
   align-items: center;
   border: none;
   background-color: var(--color-primary); 
-  color: white;
-  padding: 10px;
+  color:var(--color-surface);
+  padding: var(--spacing-sm);
   border-radius: var(--radius-sm); 
   cursor: pointer;
-  font-weight: 600;
-  font-size: var(--font-size-sm);
   transition: background-color 0.3s ease;
 }
 
@@ -64,7 +61,7 @@
 .userProfile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-sm);
   font-weight: 500;
 }
 
@@ -75,21 +72,29 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+
   .userProfile span {
     display: none;
   }
+
+    .logo {
+    visibility: hidden;
+  }
+
+   .addButton {
+    padding: 7px; 
+  }
+ 
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .searchBar {
     display: none;
   }
-  .logo {
-    visibility: hidden;
-  }
+  
   .addButton {
-    padding: var(--spacing-xs) var(--spacing-sm); 
+    padding: 4px; 
   }
 
   .userProfile span {

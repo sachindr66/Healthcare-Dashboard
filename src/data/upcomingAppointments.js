@@ -4,7 +4,7 @@ export const upcomingAppointments = [
     dayLabel: "On Thursday",
     appointments: [
       { id: 1, title: "Health checkup complete", time: "08:00", icon: "CheckCircle" },
-      { id: 2, title: "Ophthalmologist", time: "09:00", icon: "Eye" },
+      { id: 2, title: "Ophthalmologist", time: "09:00 ", icon: "Eye" },
     ],
   },
   {

@@ -1,24 +1,9 @@
-:root {
-  --card-bg-start: #dde2f9;
-  --card-bg-end: #f1f3fc;
-  --card-shadow-default: rgba(0, 0, 0, 0.06);
-  --card-shadow-hover: rgba(0, 0, 0, 0.1);
-  --icon-bg: #f3f4f6;
-  --text-color-muted: #6b7280;
-  --spacing-padding-y: 20px;
-  --spacing-padding-x: 24px;
-  --spacing-gap: 16px;
-  --radius-md: 16px;
-  --radius-sm: 6px;
-  --font-size-title: 14px;
-  --font-size-time: 12px;
-}
 
 .card {
   display: flex;
   align-items: center;
-  gap: var(--spacing-gap);
-   background: var(--color-surface);
+  gap: 16px;
+  background: var(--color-surface);
   border-left: 4px solid var(--color-primary);
   border-radius: var(--radius-sm);
   padding: var(--spacing-md);
@@ -29,8 +14,7 @@
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px var(--card-shadow-hover);
-
+  box-shadow: var(--shadow-lg);
 }
 
 .icon {
@@ -50,21 +34,21 @@
 }
 
 .content{
-  color: var(--text-color-muted);
+  color: var(--color-muted);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 486px) {
   .card {
-    padding: 12px 16px;
-    gap: 12px;
+    padding: var(--spacing-sm);
+    gap: 10px;
   }
   .content .title {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
   }
   .content .time {
-    font-size: 10px;
+    font-size: var(--font-size-xs);
   }
+  
   .icon {
     padding: 4px;
   }

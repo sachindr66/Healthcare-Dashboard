@@ -10,7 +10,6 @@
 .chart {
   display: flex;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-sm);
   height: 100px;
   align-items: flex-end;
 }

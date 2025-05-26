@@ -30,9 +30,9 @@ export default function Sidebar() {
               <a
                 href="#"
                 key={id}
-                className="navLink"
+                className={`navLink ${label === "Dashboard" ? "active" : ""}`}
                 data-label={label}
-                onClick={() => setIsOpen(false)} // 👈 closes sidebar on click
+                onClick={() => setIsOpen(false)} 
               >
                 <IconComponent size={28} className="icon" />
                 <span>{label}</span>

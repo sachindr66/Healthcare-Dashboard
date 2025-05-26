@@ -1,7 +1,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md); /* 16px */
+  gap: var(--spacing-md); 
 }
 
 .statusIndicator {
@@ -14,21 +14,20 @@
 .title {
   font-weight: 600;
   font-size: var(--font-size-sm); 
-  margin-bottom: var(--spacing-xs); 
   color: var(--color-text);
 }
 
 .status {
-  font-size: 12px; 
+  font-size: var(--font-size-xs); 
   color: var(--color-muted);
 }
 
 .date {
-  font-size: 12px; 
+  font-size: var(--font-size-xs); 
   color:var(--color-muted);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .cards {
     gap: var(--spacing-sm); 
   }
